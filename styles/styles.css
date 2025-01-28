@@ -9,8 +9,11 @@ h2,
 h3,
 p,
 button {
-  margin-top: 10px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-weight: 100;
 }
 
 a {
@@ -84,11 +87,52 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(5, auto);
+}
+
+.item {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+  position: relative;
+  gap: 1rem;
 }
 
 .category_list_container img {
   border-radius: 0.8rem;
+}
+
+.sold_out_img {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+/*------------------------------*/
+/*---------- Discount ----------*/
+/*------------------------------*/
+
+.discount {
+  position: absolute;
+  top: 56%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: blue;
+  width: 42px;
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.sold_out {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: blue;
+  width: 42px;
+  color: white;
+  border-radius: 0.4rem;
 }
 
 /*------------------------------*/
