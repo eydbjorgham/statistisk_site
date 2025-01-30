@@ -1,0 +1,16 @@
+{
+  "navn": {
+    "fornavn": "Winston",
+    "efternavn": "Sigvardsen"
+  },
+  "alder": 15,
+  "studerende": true,
+  "interesser": ["Idræt", "Sport", "Fodbold", "SoMe"],
+  "adresse": {
+    "vej": "Dalslandsgade 8H, 302",
+    "by": "København S",
+    "postnummer": "2300"
+  },
+  "email": "winston1@gmail.com",
+  "fødselsdato": "2010-10-10"
+}
